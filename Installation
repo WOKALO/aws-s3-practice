@@ -1,1 +1,11 @@
+AWS
+Install aws and configure IAM role security for a group of users. Grant access to its S3 bucket full access permission.
 
+AWSCLI: setup access role name in local aws profile and create the separate role name, like airflow.
+
+Data Migration:
+- Write local python s3 API for transfer file from local to the s3 bucket, call it through bash to commit all the changes.
+- Script the bash file to call the API and upload file.
+
+Airflow task:
+Create the airflow task to call bash operator for transfering data from local s3 to the cloud.
