@@ -9,3 +9,32 @@ Data Migration:
 
 Airflow task:
 Create the airflow task to call bash operator for transfering data from local s3 to the cloud.
+
+Schedule the task on airflow, cron expression
+
+* * * * *
+None
+Don’t schedule, use for exclusively “externally triggered” DAGs
+
+@once
+Schedule once and only once
+
+@hourly
+Run once an hour at the beginning of the hour
+0 * * * *
+
+@daily
+Run once a day at midnight
+0 0 * * *
+
+@weekly
+Run once a week at midnight on Sunday morning
+0 0 * * 0
+
+@monthly
+Run once a month at midnight of the first day of the month
+0 0 1 * *
+
+@yearly
+Run once a year at midnight of January 1
+0 0 1 1 *
