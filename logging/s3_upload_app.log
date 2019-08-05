@@ -1,0 +1,90 @@
+DEBUG: 08-04 17:00: Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+DEBUG: 08-04 17:00: Changing event name from before-call.apigateway to before-call.api-gateway
+DEBUG: 08-04 17:00: Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+DEBUG: 08-04 17:00: Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+DEBUG: 08-04 17:00: Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+DEBUG: 08-04 17:00: Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+DEBUG: 08-04 17:00: Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+DEBUG: 08-04 17:00: Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+DEBUG: 08-04 17:00: Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+DEBUG: 08-04 17:00: Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+DEBUG: 08-04 17:00: Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+DEBUG: 08-04 17:00: Setting config variable for profile to 'airflow-scheduler'
+DEBUG: 08-04 17:00: Skipping environment variable credential check because profile name was explicitly set.
+DEBUG: 08-04 17:00: Looking for credentials via: assume-role
+DEBUG: 08-04 17:00: Looking for credentials via: shared-credentials-file
+INFO: 08-04 17:00: Found credentials in shared credentials file: ~/.aws/credentials
+DEBUG: 08-04 17:00: Loading JSON file: /home/lzgtk/.local/lib/python3.6/site-packages/botocore/data/endpoints.json
+DEBUG: 08-04 17:00: Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f09254b2c80>
+DEBUG: 08-04 17:00: Loading JSON file: /home/lzgtk/.local/lib/python3.6/site-packages/botocore/data/s3/2006-03-01/service-2.json
+DEBUG: 08-04 17:00: Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f09254f37b8>
+DEBUG: 08-04 17:00: Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f09253f4488>
+DEBUG: 08-04 17:00: Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f09254f3598>
+DEBUG: 08-04 17:00: The s3 config key is not a dictionary type, ignoring its value of: None
+DEBUG: 08-04 17:00: Setting s3 timeout as (60, 60)
+DEBUG: 08-04 17:00: Loading JSON file: /home/lzgtk/.local/lib/python3.6/site-packages/botocore/data/_retry.json
+DEBUG: 08-04 17:00: Registering retry handlers for service: s3
+DEBUG: 08-04 17:00: Defaulting to S3 virtual host style addressing with path style addressing fallback.
+DEBUG: 08-04 17:00: Acquiring 0
+DEBUG: 08-04 17:00: UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f0924d1c9e8>}) about to wait for the following futures []
+DEBUG: 08-04 17:00: UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f0924d1c9e8>}) done waiting for dependent futures
+DEBUG: 08-04 17:00: Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f0924d1c9e8>}) with kwargs {'client': <botocore.client.S3 object at 0x7f0925182208>, 'config': <boto3.s3.transfer.TransferConfig object at 0x7f0924d1c0b8>, 'osutil': <s3transfer.utils.OSUtils object at 0x7f0924d1c0f0>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x7f0924d1c2b0>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f0924d1c9e8>}
+DEBUG: 08-04 17:00: Submitting task PutObjectTask(transfer_id=0, {'bucket': 'watafaka', 'key': 'ex2data.csv', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f0924d1c2b0> for transfer request: 0.
+DEBUG: 08-04 17:00: Acquiring 0
+DEBUG: 08-04 17:00: PutObjectTask(transfer_id=0, {'bucket': 'watafaka', 'key': 'ex2data.csv', 'extra_args': {}}) about to wait for the following futures []
+DEBUG: 08-04 17:00: PutObjectTask(transfer_id=0, {'bucket': 'watafaka', 'key': 'ex2data.csv', 'extra_args': {}}) done waiting for dependent futures
+DEBUG: 08-04 17:00: Executing task PutObjectTask(transfer_id=0, {'bucket': 'watafaka', 'key': 'ex2data.csv', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f0925182208>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x7f0924d1cc88>, 'bucket': 'watafaka', 'key': 'ex2data.csv', 'extra_args': {}}
+DEBUG: 08-04 17:00: Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x7f0925450048>
+DEBUG: 08-04 17:00: Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x7f092544f488>
+DEBUG: 08-04 17:00: Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x7f0925450840>
+DEBUG: 08-04 17:00: Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x7f092544f400>
+DEBUG: 08-04 17:00: Releasing acquire 0/None
+DEBUG: 08-04 17:00: Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x7f0924d61a20>>
+DEBUG: 08-04 17:00: Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x7f092544f048>
+DEBUG: 08-04 17:00: Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x7f092544f378>
+DEBUG: 08-04 17:00: Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x7f092544f730>
+DEBUG: 08-04 17:00: Adding expect 100 continue header to request.
+DEBUG: 08-04 17:00: Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x7f0924d61a20>>
+DEBUG: 08-04 17:00: Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x7f0925450950>
+DEBUG: 08-04 17:00: Making request for OperationModel(name=PutObject) with params: {'url_path': '/watafaka/ex2data.csv', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.9.197 Python/3.6.8 Linux/4.15.0-55-generic Botocore/1.12.197', 'Content-MD5': 'FR/CyPD3goMgU2PQvPkv9g==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x7f0924d1cc88>, 'url': 'https://s3.us-west-1.amazonaws.com/watafaka/ex2data.csv', 'context': {'client_region': 'us-west-1', 'client_config': <botocore.config.Config object at 0x7f0925182be0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'watafaka'}}}
+DEBUG: 08-04 17:00: Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x7f0924d8cea0>
+DEBUG: 08-04 17:00: Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f0925182748>>
+DEBUG: 08-04 17:00: Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x7f092534e048>>
+DEBUG: 08-04 17:00: Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x7f092544cea0>
+DEBUG: 08-04 17:00: Event before-sign.s3.PutObject: calling handler <function fix_s3_host at 0x7f09255eeae8>
+DEBUG: 08-04 17:00: Checking for DNS compatible bucket for: https://s3.us-west-1.amazonaws.com/watafaka/ex2data.csv
+DEBUG: 08-04 17:00: URI updated to: https://watafaka.s3.us-west-1.amazonaws.com/ex2data.csv
+DEBUG: 08-04 17:00: Calculating signature using v4 auth.
+DEBUG: 08-04 17:00: CanonicalRequest:
+PUT
+/ex2data.csv
+
+content-md5:FR/CyPD3goMgU2PQvPkv9g==
+host:watafaka.s3.us-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20190805T000016Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+DEBUG: 08-04 17:00: StringToSign:
+AWS4-HMAC-SHA256
+20190805T000016Z
+20190805/us-west-1/s3/aws4_request
+82bbb1931070b7c805151226dedea37e35b739b452d6ea2809e2d489e09b4495
+DEBUG: 08-04 17:00: Signature:
+07a8a2f9a70a950b15de66e408705cf98b5a9765b67eb54d9c14b089db929a87
+DEBUG: 08-04 17:00: Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x7f0924d8cf28>
+DEBUG: 08-04 17:00: Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://watafaka.s3.us-west-1.amazonaws.com/ex2data.csv, headers={'User-Agent': b'Boto3/1.9.197 Python/3.6.8 Linux/4.15.0-55-generic Botocore/1.12.197', 'Content-MD5': b'FR/CyPD3goMgU2PQvPkv9g==', 'Expect': b'100-continue', 'X-Amz-Date': b'20190805T000016Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAWFTNYYSQ2FW6N7XQ/20190805/us-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=07a8a2f9a70a950b15de66e408705cf98b5a9765b67eb54d9c14b089db929a87', 'Content-Length': '3775'}>
+DEBUG: 08-04 17:00: Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG: 08-04 17:00: Starting new HTTPS connection (1): watafaka.s3.us-west-1.amazonaws.com:443
+DEBUG: 08-04 17:00: Waiting for 100 Continue response.
+DEBUG: 08-04 17:00: 100 Continue response seen, now sending request body.
+DEBUG: 08-04 17:00: https://watafaka.s3.us-west-1.amazonaws.com:443 "PUT /ex2data.csv HTTP/1.1" 200 0
+DEBUG: 08-04 17:00: Response headers: {'x-amz-id-2': 'MNflWL+LgWAvmvxmlyC/K7ZXpd4zQzaQUIam39bZIEcF9brzcSHGiM97GkHsRUZcdWeoRX1aCHE=', 'x-amz-request-id': '026A7E0213C9928C', 'Date': 'Mon, 05 Aug 2019 00:00:17 GMT', 'ETag': '"151fc2c8f0f78283205363d0bcf92ff6"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+DEBUG: 08-04 17:00: Response body:
+b''
+DEBUG: 08-04 17:00: Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x7f0924d61898>
+DEBUG: 08-04 17:00: No retry needed.
+DEBUG: 08-04 17:00: Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x7f0924d61a20>>
+DEBUG: 08-04 17:00: Releasing acquire 0/None
+INFO: 08-04 17:00: File was uploaded
